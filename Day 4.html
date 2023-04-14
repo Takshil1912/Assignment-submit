@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Continuous Animation Example</title>
+	<style>
+		.box {
+			width: 50px;
+			height: 50px;
+			background-color: #333;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			animation: move-box 2s linear infinite;
+		}
+
+		@keyframes move-box {
+			from {
+				left: -50px;
+			}
+			to {
+				left: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>
